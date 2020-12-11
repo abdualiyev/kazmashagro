@@ -1,0 +1,137 @@
+*{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: darkgrey;
+}
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, dd, H6, P, BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, HR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.container{
+}
+header{
+    text-align: center;
+    justify-content: center;
+}
+.ul-header{
+    margin: 20px 150px;
+    display: flex;
+    list-style: none;
+}
+.product-list{
+
+}
+.product-list-list li{
+    list-style-type: none;
+    margin: 0 0 35px;
+    clear: both;
+    overflow: hidden;
+}
+.product-list-list a{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.product-title{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 230px 10px;
+    color: forestgreen;
+}
+.product-summary{
+    margin: 0px 0px 10px 230px;
+    background: #666e71;
+    padding: 8px 15px;
+}
+.product-summary span{
+    display: inline-block;
+    margin: 0 15px 0 0;
+    color: #fff;
+}
+.product-desc p{
+    margin: 20px 0px 0px 230px;
+}
+
+.product-item img{
+    border-radius: 40%;
+    transition: 1s;
+}
+.product-item img:hover{
+    transform: scale(0.9);
+}
+table .style-table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+table.style-table td, table.style-table th {
+    padding: 5px;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+}
+th{
+    width: 70px;
+}
+details{
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px 0px 230px;
+    color: #000;
+}
+summary{
+    background-color: wheat;
+    height: 30px;
+    padding: 5px 0px;
+    width: 100px;
+}
+@media screen and (max-width: 768px){
+    *{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .container{
+        margin: 0 auto;
+        padding: 0; 
+        text-align: center;
+    }
+    header{
+        text-align: center;
+        justify-content: center;
+    }
+    .ul-header{
+        margin: 0px auto;
+        display: flex;
+        list-style: none;
+    }
+    .product-list{
+        display: inline-block;
+        border-bottom: 2px solid #666e71;
+    }
+    .product-item{
+        display: grid;
+        border-bottom: 2px solid #666e71;
+    }
+    .product-title, .product-summary, .product-desc p, details .style-table{
+        margin: 30px 0px 0px 0px;
+    }
+    details{
+        padding: 0px 0px;
+    }
+    summary{
+        height: 40px;
+        padding: 10px 0px;
+    }
+   
+}
